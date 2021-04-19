@@ -29,7 +29,7 @@
 <body>
 
 
-<div class="sticky w-full lg:h-25 lg:py-5 items-start justify-start text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+<div class="sticky w-full lg:h-25 lg:py-5 items-start justify-start  bg-white  text-gray-700   dark-mode:text-gray-200 dark-mode:bg-gray-800">
   <div x-data="{ open: false }" class="flex flex-col lg:flex-r max-w-screen-xl px-4 mx-auto lg:items-center lg:justify-between lg:flex-row lg:px-6 lg:px-8">
     <div class="py-4 flex flex-row items-center justify-between">
      
@@ -53,7 +53,7 @@
       
     
       
-      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#testimonials">Testimonials</a>   
+      <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#testimonials">Testimonials &amp; Reviews</a>   
          
       
       <a class="px-4 py-2 mt-2 text-lg  font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 lg:mt-0 lg:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#faqs">Faqs</a>
@@ -67,9 +67,9 @@
             <a x-on:click.prevent="open = true" class="" href="">Send Us a Text</a>
         
       
-        <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50">
+        <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black text-black bg-opacity-75 z-50">
                 <form x-on:click.away="open = false" x-show.transition="open" class="max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
-                        <h3 class="mb-6 text-2xl font-medium text-center">Send us a Text</h3>
+                        <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
                         <div class="block mb-4 border border-gray-200 rounded-lg">
                             <input type="text" name="first-name" id="1-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
                         </div>
@@ -83,7 +83,7 @@
                             <textarea name="message" cols="5" id="1-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
                         </div>
                         <div class="block">
-                            <button type="button" onclick= "send_sms(1, 'Yeti-Snow-and-Lawn-Services')" class="w-full px-3 py-4 font-bold font-lg text-white bg-green-900 rounded-lg">Send</button>
+                            <button type="button" onclick= "send_sms(1, 'Yeti-Snow-and-Lawn-Services')" class="w-full px-3 py-4 font-bold font-lg text-white  bg-green-900  rounded-lg">Send</button>
                         </div>
                         
     
@@ -100,24 +100,24 @@
   
 <div class = "flex w-full flex-col">
 
-<section class="flex flex-col w-full bg-green-900 lg:flex-row lg:flex-wrap sm:mx-auto">
+<section class="flex flex-col w-full  bg-green-900 text-white  lg:flex-row lg:flex-wrap sm:mx-auto">
     <div class="flex justify-end p-8 bg-green-900 lg:py-32 lg:px-16 lg:pl-10 lg:w-1/2">
         <div class="flex flex-col items-center lg:items-start justify-center w-full lg:max-w-lg">
-            <h5 class="mb-3 text-3xl text-center font-extrabold text-white leading-none sm:text-4xl lg:text-7xl text-center lg:text-left">
+            <h5 class="mb-3 text-3xl text-center font-extrabold  leading-none sm:text-4xl lg:text-7xl text-center lg:text-left">
                 Yeti Snow and Lawn Services
             </h5>
             
-            <p class="py-5 mb-5 text-white lg:text-xl text-center lg:text-left">
+            <p class="py-5 mb-5 lg:text-xl text-center lg:text-left">
                 Exceptional, Professional Service. We treat customers like family.
             </p>
             
             <div class="flex text-center justify-center items-center" x-data="{open: false}">
-                <button type="button" x-on:click.prevent="open = true" class="inline-flex items-center justify-center bg-green-200 h-24 px-6 lg:mr-6 tracking-wide text-black transition duration-200 rounded-lg hover:bg-white hover:text-green-400 focus:shadow-outline focus:outline-none">
+                <button type="button" x-on:click.prevent="open = true" class="inline-flex items-center justify-center h-24 px-6 lg:mr-6 tracking-wide transition duration-200 rounded-lg focus:shadow-outline focus:outline-none  bg-green-200 text-black hover:bg-white hover:text-green-400 ">
                     <h5 class="text-3xl font-extrabold">Send us a text</h5> 
                 </button>
                 <div x-show.transition.opacity="open" class="p-4 fixed flex justify-center items-center inset-0 bg-black bg-opacity-75 z-50">
-                    <form x-on:click.away="open = false" x-show.transition="open" class="max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
-                            <h3 class="mb-6 text-2xl font-medium text-center">Send us a Text</h3>
+                    <form x-on:click.away="open = false" x-show.transition="open" class=" text-black max-w-3xl max-h-full h-auto p-8 py-10 overflow-auto bg-white border-b-2 border-gray-300 rounded-lg shadow-2xl px-7 mt-16 md:mt-0 md:w-2/5">
+                            <h3 class="mb-6 text-2xl font-medium text-black text-center">Send us a Text</h3>
                             <div class="block mb-4 border border-gray-200 rounded-lg">
                                 <input type="text" name="first-name" id="2-first-name" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="First Name">
                             </div>
@@ -131,7 +131,7 @@
                                 <textarea name="message" cols="5" id="2-message" class="block w-full px-4 py-3 border-2 border-transparent rounded-lg focus:border-blue-500 focus:outline-none" placeholder="What is your message?"></textarea>
                             </div>
                             <div class="block">
-                                <button type="button" onclick= "send_sms(2, 'Yeti-Snow-and-Lawn-Services')" id= "send" class="w-full px-3 py-4 font-bold font-lg text-white bg-green-900 rounded-lg">Send</button>
+                                <button type="button" onclick= "send_sms(2, 'Yeti-Snow-and-Lawn-Services')" id= "send" class="w-full px-3 py-4 font-bold font-lg text-white  bg-green-900  rounded-lg">Send</button>
                             </div>
                             
      
@@ -143,7 +143,7 @@
         </div>
     </div>
     <div class="relative order-first lg:order-last block lg:w-1/2 ">
-        <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/HE4KF3QQE3XC84QDQRVO8GOIL5KA0T02EML1H4X2.jpeg" alt="Hero Image" class="object-cover w-full lg:absolute h-80 lg:h-full">
+        <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/R86F26LRBG15R8JWTE13W421SWVJFHJVWFWABNSO.jpeg" alt="Hero Image" class="object-cover w-full lg:absolute h-80 lg:h-full">
     </div>
 </section>
 
@@ -153,18 +153,18 @@
 
   
 
-    <section id = "about" class="flex flex-col flex-grow w-full overflow-hidden bg-white lg:flex-row sm:mx-auto text-green-900">
+    <section id = "about" class="flex flex-col flex-grow w-full overflow-hidden  lg:flex-row sm:mx-auto  bg-white text-green-900 ">
         <div class="relative lg:w-1/2">
             
             <img src="https://landing-page-app-hero-images.s3.amazonaws.com/media/FB_IMG_1616298326520.jpg" alt="About Us Image" class="object-cover w-full lg:absolute h-80 lg:h-full">
             
         </div>
-        <div class="py-5 lg:py-0 flex flex-col bg-white lg:py-32 lg:px-16 lg:w-1/2">
+        <div class="py-5 lg:py-0 flex flex-col lg:py-32 lg:px-16 lg:w-1/2">
             <div class="flex flex-col items-center lg:items-start w-full lg:max-w-lg">
                 <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl">
                     About Us
                 </h5>
-                <p class="py-5 px-5 lg:px-0 mb-5 text-center lg:text-left text-green-900 lg:text-xl">
+                <p class="py-5 px-5 lg:px-0 mb-5 text-center lg:text-left  lg:text-xl">
                 Yeti Snow and Lawn Service&#x27;s offers affordable rates, friendly and quality service to Helena and surrounding area&#x27;s. We treat customers like family and are here to help with all lawn care needs!
                 </p>                
             </div>
@@ -173,7 +173,7 @@
             
                 <div class="pb-30 mx-auto w-1/3 " data-aos="fade-down" data-aos-delay="400">
                     <span class = "text-green-400"> <i class="fas fa-user-shield fa-2x "></i> </span>
-                    <div class="mt-5 text-md font-bold text-green-900 uppercase">
+                    <div class="mt-5 text-md font-bold  uppercase">
                         Bonded
                     </div>
  
@@ -186,7 +186,7 @@
                 <div class="mb-30 mx-auto w-1/3  " data-aos="fade-down" data-aos-delay="400">
                     <span class = "text-green-400"> <i class="fas fa-shield-alt fa-2x "></i> </span>
                     
-                    <div class="mt-5 text-md font-bold text-green-900 uppercase">
+                    <div class="mt-5 text-md font-bold  uppercase">
                         Insured
                     </div>
   
@@ -199,7 +199,7 @@
             
                 <div class="mb-30 mx-auto w-1/3 " data-aos="fade-down" data-aos-delay="400">
                     <span class = "text-green-400"> <i class="fas fa-heart fa-2x "></i> </span>
-                    <div class="mt-5 text-md font-bold text-green-900 uppercase">
+                    <div class="mt-5 text-md font-bold  uppercase">
                         Family Owned
                     </div>
                     <br>
@@ -227,7 +227,8 @@
                 
                 
                 
-                
+                 
+                                 
                            
                   
                </div>
@@ -242,7 +243,7 @@
 </div>
     
     
-    <section id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6 bg-green-900 border-0 border-green-200 border-solid text-white">
+    <section id= "services" class="lg:mt-0 relative w-full px-8 font-sans leading-6  bg-green-900 border-0 border-green-200 text-white border-solid ">
         <div class="flex flex-col items-center max-w-6xl px-8 py-20 mx-auto leading-6 border-solid md:items-stretch md:justify-center md:py-24">
             
             <h5 class="mb-3 lg:pr-9 text-3xl mx-auto font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
@@ -255,78 +256,78 @@
             <div class="grid grid-cols-3 gap-5 mt-10 sm:grid-cols-8 lg:grid-cols-12">
 
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 text-white">
+                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 ">
                     <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
                         
-                        <div class="md:mt-6 font-sans text-center border-0 border-green-200  text-green-400">
-                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-green-400">Mowing</span>
+                        <div class="md:mt-6 font-sans text-center border-0 border-green-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-green-400  ">Mowing</span>
                             <p
-                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
                                 We know life gets busy, and we are here to help keep your lawn looking fresh. We are experts are maintaining the health of your grass while ensuring it looks properly groomed.
                             </p>
                         </div>
                     </div>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 text-white">
+                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 ">
                     <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
                         
-                        <div class="md:mt-6 font-sans text-center border-0 border-green-200  text-green-400">
-                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-green-400">Mulch Installation</span>
+                        <div class="md:mt-6 font-sans text-center border-0 border-green-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-green-400  ">Snow Removal</span>
                             <p
-                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
-                                Mulch not only helps with the health of shrubs and plants, but improves the looks of any flower beds. We can deliver and spread mulch wherever you need.
-                            </p>
-                        </div>
-                    </div>
-                </div>        
-                    
-                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 text-white">
-                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
-                        
-                        <div class="md:mt-6 font-sans text-center border-0 border-green-200  text-green-400">
-                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-green-400">Snow Removal</span>
-                            <p
-                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
                                 When the weather gets cold, we are here for all snow removal help. From plowing to shoveling to salting we will ensure your property is safe and snow free.
                             </p>
                         </div>
                     </div>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 text-white">
+                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 ">
                     <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
                         
-                        <div class="md:mt-6 font-sans text-center border-0 border-green-200  text-green-400">
-                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-green-400">Debris Cleanup</span>
+                        <div class="md:mt-6 font-sans text-center border-0 border-green-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-green-400  ">Mulch Installation</span>
                             <p
-                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
+                                Mulch not only helps with the health of shrubs and plants, but improves the looks of any flower beds. We can deliver and spread mulch wherever you need.
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+                    
+                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 ">
+                    <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
+                        
+                        <div class="md:mt-6 font-sans text-center border-0 border-green-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-green-400  ">Debris Cleanup</span>
+                            <p
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
                                 From tree debris to general yard debris we have the equipment to haul away unwanted materials. We will ensure your lawn is not cluttered with unwanted debris.
                             </p>
                         </div>
                     </div>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 text-white">
+                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 ">
                     <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
                         
-                        <div class="md:mt-6 font-sans text-center border-0 border-green-200  text-green-400">
-                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-green-400">Fertilization</span>
+                        <div class="md:mt-6 font-sans text-center border-0 border-green-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-green-400  ">Fertilization</span>
                             <p
-                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
                                 Fertilization will help your lawn by improving overall health and making it greener and thicker. Fertilization helps the lawn not only look better, but last longer.
                             </p>
                         </div>
                     </div>
                 </div>        
                     
-                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 text-white">
+                <div class="max-w-xs col-span-4 font-sans border-0 border-green-200 ">
                     <div class="box-border flex flex-col items-center  h-full px-2 py-4 md:py-8 mx-4 leading-6 text-center border-solid ">
                         
-                        <div class="md:mt-6 font-sans text-center border-0 border-green-200  text-green-400">
-                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid text-green-400">Shrub Trimming</span>
+                        <div class="md:mt-6 font-sans text-center border-0 border-green-200 ">
+                            <span class="box-border text-xl font-bold leading-none tracking-wider border-solid  text-green-400  ">Shrub Trimming</span>
                             <p
-                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center text-white border-solid ">
+                                class="box-border mx-0 mt-2 mb-0 font-normal leading-snug text-center    border-solid ">
                                 Shrub trimming can improve the health and look of your shrubs. We have the tools and experience for all types of shrubs.
                             </p>
                         </div>
@@ -338,58 +339,82 @@
     </section>
     
     
-    <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden bg-white md:pt-20 xl:pt-20 xl:pb-20">
+    <div id="our-work" class="relative mb-0 w-full pt-12 overflow-hidden  bg-white text-green-900   md:pt-20 xl:pt-20 xl:pb-20">
         <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0">
-                <h5 class="mb-3 text-3xl text-green-900 font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h5>
+                <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide  text-center">Our Best Work</h5>
                 <p class="my-3 mb-10 text-xl font-medium text-green-500 text-center">See why our customers love us</p>
                 <div class="flex flex-wrap md:mx-4 md:mb-8 md:flex-row">
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/2NU38P3AICH1TDVLR7LS4M22BGT2LDBSW3U5O5JF.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/2NU38P3AICH1TDVLR7LS4M22BGT2LDBSW3U5O5JF.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3GS86WJ26NHJ7SBL86U2OXWDC3ZMIWR6SLUHNSXJ.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3GS86WJ26NHJ7SBL86U2OXWDC3ZMIWR6SLUHNSXJ.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/6UYIQSP0RC9NZG9FGVWCE0TQ6JED6NF2LY9W22YU.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/6UYIQSP0RC9NZG9FGVWCE0TQ6JED6NF2LY9W22YU.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/N904I038680417GLTMNE1FO2T83DF29UIPNZAKMT.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/N904I038680417GLTMNE1FO2T83DF29UIPNZAKMT.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/UJPDKS4JNW37UK64FE7ELKTDTT2U3IY2I98IR4ZD.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/UJPDKS4JNW37UK64FE7ELKTDTT2U3IY2I98IR4ZD.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/NLT42LDKPUNETQYL5PM0TDQW1NNBOKFL7NMVVP6Z.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/NLT42LDKPUNETQYL5PM0TDQW1NNBOKFL7NMVVP6Z.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/RXIAC6B83JUFIECFRNH6KWIA3N88HZAEUVZNZS3V.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/RXIAC6B83JUFIECFRNH6KWIA3N88HZAEUVZNZS3V.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3CT3W4O5C866WMLU49IS1GD19YU6KI66S9J3YYXQ.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3CT3W4O5C866WMLU49IS1GD19YU6KI66S9J3YYXQ.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3QPUQ1QUZR2TNMY9GUIP4IMQ1CLVAZXXTP536FIW.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/3QPUQ1QUZR2TNMY9GUIP4IMQ1CLVAZXXTP536FIW.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/16WRQGSUL2SSVCWA0B2PPS07CMTLBHGR8TGGNSBN.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/16WRQGSUL2SSVCWA0B2PPS07CMTLBHGR8TGGNSBN.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/KOBLL0A7QPESRYOO863IW0KBW8GKYN85QAD1GO3Q.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/KOBLL0A7QPESRYOO863IW0KBW8GKYN85QAD1GO3Q.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                 
                 
-                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/2BO6GYPKP4QXQ6SSXYVA94VMW8J5QEUYOBPOJPE3.jpeg" alt=""></div>
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/2BO6GYPKP4QXQ6SSXYVA94VMW8J5QEUYOBPOJPE3.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/372S1IXC1Y937Y7Y214KOT8DNAJTRPNPPH39VWR3.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/X7ZMPYBKY27NBW6BPAEOYQV210F97NJHZ3OY0YLB.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/W76X5LPYKBRZW15RF5GNSUX5P7G6KXI2U5TF49E7.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ZU3OTMB1FU7R9NI1OYHPPBRNZ4NBA1HUTCY8PWBY.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/ZZ7MLE8HQEQRXBLDHX853CTEF8CMH1K7Q7PEF35O.jpeg" alt="photo of past work" loading="lazy" ></div>
+                    
+                
+                
+                    <div class="flex sm:h-30 md:h-auto md:w-1/3 px-4 mb-8"><img class="rounded shadow-md object-cover w-full h-60" src="https://landing-page-app-hero-images.s3.amazonaws.com/media/VHG8FGSPYJXHAN3OR211LTI07VI44VRJDGN1DQYH.jpeg" alt="photo of past work" loading="lazy" ></div>
                     
                  
                 </div>     
@@ -399,44 +424,44 @@
     
     
     
-    <div id= "testimonials" class="flex items-center justify-center bg-green-900 py-20 min-w-screen px-4">
-        <div class="px-16 bg-green-900">
+    <div id= "testimonials" class="flex items-center justify-center  bg-green-900 text-white  py-20 min-w-screen px-4">
+        <div class="px-16 ">
             <div class="container flex flex-col items-center lg:items-startmx-auto lg:items-center">
                 <div class = "sm:mb-4 md:mb-0">
-                <p class="relative flex  text-center sm:justify-center sm:mb-8 md:justify-start w-full text-lg font-bold tracking-wider text-white uppercase lg:justify-center lg:items-center mb-10">Don't just take our word for it</p>
+                <p class="relative flex  text-center sm:justify-center sm:mb-8 md:justify-start w-full text-lg font-bold tracking-wider uppercase lg:justify-center lg:items-center mb-10">Don&#x27;t just take our word for it</p>
                 </div>
 
 
-                <h5 class="mb-3 text-3xl text-white font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
+                <h5 class="mb-3 text-3xl font-extrabold leading-none sm:text-4xl lg:text-7xl tracking-wide text-center">
                     
-                    Testimonials & Reviews</h5>
+                    Testimonials &amp; Reviews</h5>
                 <div class="block w-full h-1 max-w-lg mt-6 bg-purple-100 rounded-full"></div>
                 <div class="items-start justify-start w-full mt-12 mb-4 lg:flex lg:flex-wrap">
 
                     
             
-                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-start ">
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
                         
                         <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold text-green-200">Marguerite Zink</h4>
-                            <p class="text-green-200">Homeowner</p>
+                            <h4 class="font-bold  text-green-200  ">Marguerite Zink</h4>
+                            <p class=" text-green-200 ">Homeowner</p>
                             <div class="flex flex-row items-start ">
                                 
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
                                 
                             </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-white text-center lg:text-left">"We’ve use Yeti snow removal for two properties during two heavy snow winters and they have done a great job for us each year.  We look forward to a third year of excellent service. Thank you RJ!"</blockquote>                           
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"We’ve use Yeti snow removal for two properties during two heavy snow winters and they have done a great job for us each year.  We look forward to a third year of excellent service. Thank you RJ!"</blockquote>                           
                         </div>
                     </div>
                     
@@ -444,28 +469,28 @@
 
                     
             
-                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-start ">
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
                         
                         <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold text-green-200">Cathy Searight</h4>
-                            <p class="text-green-200">Homeowner</p>
+                            <h4 class="font-bold  text-green-200  ">Cathy Searight</h4>
+                            <p class=" text-green-200 ">Homeowner</p>
                             <div class="flex flex-row items-start ">
                                 
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
                                 
                             </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-white text-center lg:text-left">"First time I used Yeti and what a blessing. Fast response, great communication and did a super job at removing the snow in my alley. Will definitely keep this number handy for future use. Thanks RJ."</blockquote>                           
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"First time I used Yeti and what a blessing. Fast response, great communication and did a super job at removing the snow in my alley. Will definitely keep this number handy for future use. Thanks RJ."</blockquote>                           
                         </div>
                     </div>
                     
@@ -473,28 +498,28 @@
 
                     
             
-                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-start ">
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
                         
                         <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold text-green-200">Kami Shuman</h4>
-                            <p class="text-green-200">Homeowner</p>
+                            <h4 class="font-bold  text-green-200  ">Kami Shuman</h4>
+                            <p class=" text-green-200 ">Homeowner</p>
                             <div class="flex flex-row items-start ">
                                 
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
                                 
                             </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-white text-center lg:text-left">"Amazing service, quick response, and easy online billing! These guys are always willing to fit you into their schedule and do high quality work! I cannot say enough good about them!"</blockquote>                           
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Amazing service, quick response, and easy online billing! These guys are always willing to fit you into their schedule and do high quality work! I cannot say enough good about them!"</blockquote>                           
                         </div>
                     </div>
                     
@@ -502,28 +527,28 @@
 
                     
             
-                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-start ">
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
                         
                         <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold text-green-200">Jessica Arnold</h4>
-                            <p class="text-green-200">Homeowner</p>
+                            <h4 class="font-bold  text-green-200  ">Jessica Arnold</h4>
+                            <p class=" text-green-200 ">Homeowner</p>
                             <div class="flex flex-row items-start ">
                                 
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
                                 
                             </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-white text-center lg:text-left">"Very professional, did a wonderful job, and super easy to work with!!!"</blockquote>                           
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Very professional, did a wonderful job, and super easy to work with!!!"</blockquote>                           
                         </div>
                     </div>
                     
@@ -531,28 +556,28 @@
 
                     
             
-                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-start ">
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
                         
                         <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold text-green-200">Sarah Evans Karasch</h4>
-                            <p class="text-green-200">Homeowner</p>
+                            <h4 class="font-bold  text-green-200  ">Sarah Evans Karasch</h4>
+                            <p class=" text-green-200 ">Homeowner</p>
                             <div class="flex flex-row items-start ">
                                 
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
                                 
                             </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-white text-center lg:text-left">"Great service, and great people."</blockquote>                           
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Great service, and great people."</blockquote>                           
                         </div>
                     </div>
                     
@@ -560,28 +585,28 @@
 
                     
             
-                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-start ">
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
                         
                         <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold text-green-200">Prince James Preston</h4>
-                            <p class="text-green-200">Homeowner</p>
+                            <h4 class="font-bold  text-green-200  ">Prince James Preston</h4>
+                            <p class=" text-green-200 ">Homeowner</p>
                             <div class="flex flex-row items-start ">
                                 
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
                                 
                             </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-white text-center lg:text-left">"These guys are rockstars! good work!"</blockquote>                           
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"These guys are rockstars! good work!"</blockquote>                           
                         </div>
                     </div>
                     
@@ -589,28 +614,28 @@
 
                     
             
-                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-start ">
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
                         
                         <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold text-green-200">Cindy Carrington</h4>
-                            <p class="text-green-200">Homeowner</p>
+                            <h4 class="font-bold  text-green-200  ">Cindy Carrington</h4>
+                            <p class=" text-green-200 ">Homeowner</p>
                             <div class="flex flex-row items-start ">
                                 
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
                                 
                             </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-white text-center lg:text-left">"Beyond expectations !!! I messaged RJ to get a quote on snow removal from my driveway and side road. He asked for my address and said he would have to take a look. Said he&#x27;d be there in 20 minutes. Within the 20 minutes myself and kids saw a truck outside plowing our road side parking spot and already removing the snow from my driveway. I was nervous, I didn&#x27;t know how much this company was going to charge. I was nervous. And just like that, he was done and drove off. Yap, drove off and didn&#x27;t even ask for a payment. RJ sent me a text, have a wonderful evening. I am very beyond pleased in Yeti Snow Services. Thank you RJ, you made our evening !!!"</blockquote>                           
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Beyond expectations !!! I messaged RJ to get a quote on snow removal from my driveway and side road. He asked for my address and said he would have to take a look. Said he&#x27;d be there in 20 minutes. Within the 20 minutes myself and kids saw a truck outside plowing our road side parking spot and already removing the snow from my driveway. I was nervous, I didn&#x27;t know how much this company was going to charge. I was nervous. And just like that, he was done and drove off. Yap, drove off and didn&#x27;t even ask for a payment. RJ sent me a text, have a wonderful evening. I am very beyond pleased in Yeti Snow Services. Thank you RJ, you made our evening !!!"</blockquote>                           
                         </div>
                     </div>
                     
@@ -618,28 +643,28 @@
 
                     
             
-                    <div class="flex flex-col items-start justify-start w-full h-auto mb-12 lg:w-1/2">
-                    <div class="flex items-start ">
+                    <div class="flex flex-col items-center lg:items-start justify-center w-full h-auto mb-12 lg:w-1/2">
+                    <div class="flex items-center lg:items-start ">
                         
                         <div class="flex flex-col justify-start items-center lg:items-start ">
-                            <h4 class="font-bold text-green-200">Alice HC</h4>
-                            <p class="text-green-200">Homeowner</p>
+                            <h4 class="font-bold  text-green-200  ">Alice HC</h4>
+                            <p class=" text-green-200 ">Homeowner</p>
                             <div class="flex flex-row items-start ">
                                 
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
-                                <span class = "text-white"> <i class="fas fa-star"> </i> </span>
+                                <span class = " text-white "> <i class="fas fa-star"> </i> </span>
                                 
                                 
                             </div>
-                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-white text-center lg:text-left">"Responded to my helena classifieds sd and was in the area.  Gave a reasonable quote and plowed my driveway while I was at work.  Even sent me a photo of completed work.  online billing.  Yeti is just a message away, love that I didnt have to make calls and tonight I dont have to trudge through a foot of snow to get inside!! Thank you."</blockquote>                           
+                            <blockquote class="mt-8 lg:pr-5 font-bold text-xl text-center lg:text-left   text-white ">"Responded to my helena classifieds sd and was in the area.  Gave a reasonable quote and plowed my driveway while I was at work.  Even sent me a photo of completed work.  online billing.  Yeti is just a message away, love that I didnt have to make calls and tonight I dont have to trudge through a foot of snow to get inside!! Thank you."</blockquote>                           
                         </div>
                     </div>
                     
@@ -655,11 +680,11 @@
     </div>
     
 
-<section id= "faqs" class="py-16 bg-white md:py-20 lg:py-24">
+<section id= "faqs" class="py-16   bg-white text-green-900  md:py-20 lg:py-24">
     <div class="max-w-5xl px-12 mx-auto xl:px-0">
 
-        <h2 class="text-3xl text-green-900 font-bold md:text-4xl lg:text-6xl xl:text-7xl text-center lg:text-left">FAQs</h2>
-        <p class="mt-4 text-xl font-thin text-green-900 lg:text-2xl text-center lg:text-left">Your questions answered</p>
+        <h2 class="text-3xl  font-bold md:text-4xl lg:text-6xl xl:text-7xl text-center lg:text-left">FAQs</h2>
+        <p class="mt-4 text-xl font-thin  lg:text-2xl text-center lg:text-left">Your questions answered</p>
 
         <div class="relative mt-12 space-y-3">
 
@@ -691,10 +716,10 @@
 
 
 
-<section id="find-us" class="py-16 bg-white md:py-20 lg:py-20">
+<section id="find-us" class="py-16   bg-white text-green-900  md:py-20 lg:py-20">
     <div class="max-w-5xl px-12 mx-auto text-center xl:px-0">
 
-    <h5 class="mb-5 text-3xl text-green-900 mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl"> Find Us</h5>
+    <h5 class="mb-5 text-3xl  mx-auto text-center font-extrabold leading-none sm:text-4xl lg:text-7xl"> Find Us</h5>
     <iframe
             width="100%"
             height="500px"
@@ -710,7 +735,7 @@
 <section class="py-10 bg-green-900">
     
         <div class="flex flex-col justify-around text-center md:flex-row">
-            <p class="order-last text-sm leading-tight text-green-500 md:order-first"> Crafted with <a  href="https://www.prophone.com/prosite" class="text-white">ProPhone</a>. Built with ❤️ by our team. </p>
+            <p class="order-last text-sm leading-tight text-green-500 md:order-first"> Crafted with <a  href="https://www.prophone.com/prosite" class="  text-white ">ProPhone</a>. Built with ❤️ by our team. </p>
              
             <ul class="flex flex-row flex-wrap text-center justify-center pb-3 lg:-ml-4 lg:-mr-4 text-sm">
                 <li> <a href="#about" class="px-2 md:px-4 text-green-500 hover:text-white">About Us</a> </li>
@@ -721,7 +746,7 @@
                 <li> <a href="#our-work" class=" px-2 md:px-4 text-green-500 hover:text-white">Our Best Work</a> </li>
                 
                 
-                <li> <a href="#testimonials" class="px-2 md:px-4 text-green-500 hover:text-white">Testimonials</a></li>
+                <li> <a href="#testimonials" class="px-2 md:px-4 text-green-500 hover:text-white">Testimonials &amp; Reviews</a></li>
                 
                 
                 <li> <a href="#faqs" class="px-2 md:px-4 text-green-500 hover:text-white">Faqs</a></li>
